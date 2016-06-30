@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "start": "node .",
+    "start": "nodemon --exec babel-node .",
     "pretest": "eslint .",
     "posttest": "nsp check"
   },
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "eslint": "^2.5.3",
+    "nodemon": "^1.9.2",
     "nsp": "^2.1.0"
   },
   "repository": {
