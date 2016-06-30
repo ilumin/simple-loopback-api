@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+
+  server:
+    container_name: simple-loopback-api
+    build: .
+    ports:
+      - 80:3000
+    volumes:
+      - ./app:/src/app
